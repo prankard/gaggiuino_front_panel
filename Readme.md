@@ -13,7 +13,7 @@ https://www.aliexpress.com/item/1005001683893211.html?spm=a2g0o.order_list.order
 
 These buttons I suggested don't carry high voltage **SO DO NOT RUN HIGH VOLTAGE POWER THROUGH THEM** thanks!
 
-I'm using a Sonoff Mini as a power switch to control the mains, and have a low power momentary switch to turn on/off the gaggia classic. **Be careful of the amps the power wifi switch can support in your region, I'm on 240v here so lower amps than in USA**
+I'm using a Sonoff Mini as a power switch to control the mains, and have a low power momentary switch to turn on/off the gaggia classic. **Be careful of the amps the power wifi switch can support in your region, I'm on 240v here so lower amps than in USA**. Perhaps a Shelly 16A would be a better choice for USA, but please do your research, I'm not an electrician.
 
 
 
@@ -26,8 +26,8 @@ You need to compile with that, and add the build flags to allow for momentary st
 
 	[extra]
 	build_flags =
-		-DsteamMomentary
-		-DbrewMomentary
+		-DSTEAM_MOMENTARY
+		-DBREW_MOMENTARY
 
 # Parts
 
@@ -98,3 +98,11 @@ Pieces in a sandwich should be in this order:
 
 - Clip could be made slightly easier to snap in the 2 sides, I had to use a thin blade to pull in the clip fully.
 - Laser cut outer edge need to account for laser cutting size, (so make the outside edge slightly thicker)
+
+
+
+# Attribution
+
+Thanks to of course the [Gaggiuino](https://gaggiuino.github.io/#/) project
+
+And thanks to @Loogle with their [Gaggiuino Logo](https://www.printables.com/model/261455-gaggiuino-branding) vector file 
